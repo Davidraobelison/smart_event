@@ -1,0 +1,252 @@
+/* Tokens from _variables.css are used (colors, spacings, radii, fonts) */
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-md);
+  gap: var(--space-md);
+  background: var(--color-surface);
+  backdrop-filter: blur(6px);
+  border-bottom: var(--border-width-1) solid var(--color-border);
+  color: var(--color-text);
+  z-index: 50;
+  /* Above main content, below sidebar overlay/sidebar if needed but sidebar is fixed left */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    left: 260px;
+    /* Width of the sidebar */
+  }
+}
+
+/* sticky class is now essentially default */
+.sticky {
+  position: fixed;
+}
+
+
+/* Left area (menu + brand + search) */
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex: 1;
+  min-width: 0;
+}
+
+.menuButton {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  margin-right: var(--space-xs);
+  transition: var(--transition-fast);
+}
+
+.menuButton:hover {
+  background-color: var(--color-surface-2);
+}
+
+@media (min-width: 1024px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.headerBrand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 1024px) {
+  .headerBrand {
+    display: none;
+  }
+}
+
+
+.brandIconBox {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #ff7a00;
+  box-shadow: 0 4px 12px rgba(255, 122, 0, 0.3);
+  flex-shrink: 0;
+}
+
+
+.brandIcon {
+  color: #ffffff;
+}
+
+.brandTitle {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+  color: var(--color-heading);
+  white-space: nowrap;
+}
+
+
+
+/* Search */
+.searchWrapper {
+  display: none;
+  /* visible on >= sm */
+  align-items: center;
+  gap: var(--space-xs);
+  position: relative;
+  max-width: 520px;
+  width: 100%;
+  margin-left: var(--space-md);
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border-radius: var(--radius-pill);
+  border: var(--border-width-1) solid transparent;
+  background: var(--color-surface-2);
+  font-size: var(--fs-md);
+  outline: none;
+  transition: var(--transition);
+  color: var(--color-text);
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 0 4px var(--focus-ring);
+  border-color: var(--color-primary-400);
+}
+
+.searchSubmit {
+  display: none;
+  /* we keep a submit for keyboard users but hide visual */
+  border: none;
+  background: transparent;
+}
+
+/* Right area (icons + language) */
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  color: var(--color-text);
+}
+
+.iconButton:hover,
+.iconButton:focus {
+  background: var(--muted-bg);
+  outline: none;
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-danger);
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px var(--color-surface);
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background: var(--color-border);
+  margin: 0 var(--space-xs);
+  display: none;
+  /* visible on md+ */
+}
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.langText {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+  color: var(--color-heading);
+}
+
+/* Responsive rules */
+@media (min-width: 640px) {
+  .searchWrapper {
+    display: flex;
+  }
+
+  .divider {
+    display: block;
+  }
+}
+
+/* Dark mode support using data-theme attribute */
+:global([data-theme='dark']) .header {
+  background: rgba(20, 26, 33, 0.85);
+  /* Slightly transparent theme surface */
+  border-bottom-color: var(--color-border);
+  color: var(--color-text);
+}

@@ -1,0 +1,37 @@
+{
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "search": "Search...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "roles": {
+        "organizer": "Organizer",
+        "provider": "Provider",
+        "client": "Client",
+        "admin": "Administrator"
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "events": "Events",
+        "evenement": "Events",
+        "tasks": "Tasks",
+        "timeline-tache": "Task Timeline",
+        "budget": "Budget",
+        "vendors": "Vendors",
+        "gestion-prestataires": "Vendor Management",
+        "chat": "Chat",
+        "message": "Messaging",
+        "missions": "Missions",
+        "my_clients": "My Clients",
+        "invitation": "Invitations",
+        "gestion-ressource": "Resource Management",
+        "marketplace": "Marketplace",
+        "gestion-utilisateurs": "User Management",
+        "abonnements": "Subscriptions",
+        "statistiques": "Statistics"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "dashboard": "Tableau de Bord",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "search": "Rechercher...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "roles": {
+        "organizer": "Organisateur",
+        "provider": "Prestataire",
+        "client": "Client",
+        "admin": "Administrateur"
+    },
+    "nav": {
+        "dashboard": "Tableau de Bord",
+        "events": "Événements",
+        "evenement": "Événements",
+        "tasks": "Tâches",
+        "timeline-tache": "Planning des Tâches",
+        "budget": "Budget",
+        "vendors": "Prestataires",
+        "gestion-prestataires": "Gestion des Prestataires",
+        "chat": "Messagerie",
+        "message": "Messagerie",
+        "missions": "Missions",
+        "my_clients": "Mes Clients",
+        "invitation": "Invitations",
+        "gestion-ressource": "Gestion des Ressources",
+        "marketplace": "Marketplace",
+        "gestion-utilisateurs": "Gestion Utilisateurs",
+        "abonnements": "Abonnements",
+        "statistiques": "Statistiques"
+    }
+}

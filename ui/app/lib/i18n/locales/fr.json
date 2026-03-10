@@ -1,0 +1,28 @@
+{
+    "common": {
+        "dashboard": "Tableau de Bord",
+        "settings": "Paramètres",
+        "profile": "Profil",
+        "logout": "Déconnexion",
+        "search": "Rechercher...",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "loading": "Chargement...",
+        "error": "Une erreur est survenue"
+    },
+    "roles": {
+        "organizer": "Organisateur",
+        "provider": "Prestataire",
+        "client": "Client",
+        "admin": "Administrateur"
+    },
+    "nav": {
+        "events": "Événements",
+        "tasks": "Tâches",
+        "budget": "Budget",
+        "vendors": "Prestataires",
+        "chat": "Messagerie",
+        "missions": "Missions",
+        "my_clients": "Mes Clients"
+    }
+}

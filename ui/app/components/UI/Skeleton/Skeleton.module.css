@@ -1,0 +1,176 @@
+
+/* Skeleton de base */
+.skeleton {
+  background-color: var(--color-surface-2);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Variantes */
+.variant-text {
+  height: var(--fs-md);
+  border-radius: var(--radius-xs);
+}
+
+.variant-rect {
+  height: 96px;
+  border-radius: var(--radius-md);
+}
+
+.variant-circle {
+  border-radius: 50%;
+}
+
+.variant-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.variant-card {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-md);
+}
+
+.variant-list {
+  width: 100%;
+  height: 64px;
+  border-radius: var(--radius-sm);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animation-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.animation-wave {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-surface-2);
+}
+
+.animation-wave::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: wave 1.6s linear infinite;
+}
+
+.animation-none {
+  animation: none;
+}
+
+/* Largeur complète */
+.fullWidth {
+  width: 100%;
+}
+
+/* SkeletonText */
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* SkeletonCard */
+.cardSkeleton {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cardContent {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+}
+
+/* SkeletonList */
+.listContainer {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.listContent {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .variant-rect {
+    height: 72px;
+  }
+  
+  .cardSkeleton {
+    max-width: 100%;
+  }
+  
+  .listItem {
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+}
+
+/* Amélioration de l'accessibilité */
+.skeleton[aria-label="Chargement en cours"] {
+  pointer-events: none;
+  user-select: none;
+}
