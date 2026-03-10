@@ -1,0 +1,12 @@
+{
+    "title": "Tableau de Bord - Organisateur",
+    "welcome": "Bienvenue, {name}. Voici un résumé de vos événements.",
+    "stats": {
+        "active_events": "Événements actifs",
+        "pending_tasks": "Tâches en cours",
+        "total_vendors": "Prestataires totaux",
+        "global_budget": "Budget Global"
+    },
+    "recent_events": "Événements récents",
+    "priority_tasks": "Tâches prioritaires"
+}

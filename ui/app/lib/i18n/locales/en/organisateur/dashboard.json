@@ -1,0 +1,12 @@
+{
+    "title": "Organizer Dashboard",
+    "welcome": "Welcome, {name}. Here is a summary of your events.",
+    "stats": {
+        "active_events": "Active Events",
+        "pending_tasks": "Pending Tasks",
+        "total_vendors": "Total Vendors",
+        "global_budget": "Global Budget"
+    },
+    "recent_events": "Recent Events",
+    "priority_tasks": "Priority Tasks"
+}

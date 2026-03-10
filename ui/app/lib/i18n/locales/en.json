@@ -1,0 +1,28 @@
+{
+    "common": {
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "profile": "Profile",
+        "logout": "Logout",
+        "search": "Search...",
+        "save": "Save",
+        "cancel": "Cancel",
+        "loading": "Loading...",
+        "error": "An error occurred"
+    },
+    "roles": {
+        "organizer": "Organizer",
+        "provider": "Provider",
+        "client": "Client",
+        "admin": "Administrator"
+    },
+    "nav": {
+        "events": "Events",
+        "tasks": "Tasks",
+        "budget": "Budget",
+        "vendors": "Vendors",
+        "chat": "Chat",
+        "missions": "Missions",
+        "my_clients": "My Clients"
+    }
+}

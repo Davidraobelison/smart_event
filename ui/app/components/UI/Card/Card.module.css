@@ -1,0 +1,308 @@
+/* Card principale */
+.card {
+  background-color: var(--color-surface);
+  transition: all var(--transition);
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+
+/* Variantes */
+.variant-default {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.variant-outline {
+  background-color: transparent;
+  border: var(--border-width-1) solid var(--color-border);
+}
+
+.variant-ghost {
+  background-color: transparent;
+}
+
+.variant-filled {
+  background-color: var(--color-surface-2);
+}
+
+/* Tailles */
+.size-sm {
+  font-size: var(--fs-sm);
+}
+
+.size-md {
+  font-size: var(--fs-md);
+}
+
+.size-lg {
+  font-size: var(--fs-lg);
+}
+
+/* Ombres */
+.shadow-none {
+  box-shadow: none;
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Rayons */
+.radius-none {
+  border-radius: 0;
+}
+
+.radius-sm {
+  border-radius: var(--radius-sm);
+}
+
+.radius-md {
+  border-radius: var(--radius-md);
+}
+
+.radius-lg {
+  border-radius: var(--radius-lg);
+}
+
+.radius-xl {
+  border-radius: var(--radius-lg);
+}
+
+/* Bordures */
+.bordered {
+  border: var(--border-width-1) solid var(--color-border);
+}
+
+/* États */
+.hoverable:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.clickable {
+  cursor: pointer;
+  outline: none;
+}
+
+.clickable:focus {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+/* CardHeader */
+.cardHeader {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.cardHeader.withDivider {
+  border-bottom: var(--border-width-1) solid var(--color-border);
+}
+
+/* CardTitle */
+.cardTitle {
+  margin: 0;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-heading);
+  line-height: var(--lh-tight);
+}
+
+/* CardDescription */
+.cardDescription {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  line-height: var(--lh-base);
+}
+
+/* CardBody */
+.cardBody {
+  display: block;
+}
+
+.cardBody.padded {
+  padding: var(--space-lg);
+}
+
+/* CardFooter */
+.cardFooter {
+  padding: var(--space-lg);
+  display: flex;
+  align-items: center;
+}
+
+.cardFooter.withDivider {
+  border-top: var(--border-width-1) solid var(--color-border);
+}
+
+.cardFooter.align-start {
+  justify-content: flex-start;
+}
+
+.cardFooter.align-center {
+  justify-content: center;
+}
+
+.cardFooter.align-end {
+  justify-content: flex-end;
+}
+
+.cardFooter.align-space-between {
+  justify-content: space-between;
+}
+
+/* CardImage */
+.cardImageContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cardImageContainer.cover .cardImage {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CardIcon */
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-100);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+/* CardBadge */
+.cardBadge {
+  display: inline-block;
+  padding: var(--space-xxs) var(--space-sm);
+  border-radius: var(--radius-xs);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-base);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.badge-default {
+  background-color: var(--color-surface-2);
+  color: var(--color-muted);
+}
+
+.badge-primary {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-600);
+}
+
+.badge-success {
+  background-color: rgba(36, 180, 126, 0.1);
+  color: var(--color-success);
+}
+
+.badge-warning {
+  background-color: rgba(255, 176, 32, 0.1);
+  color: var(--color-warning);
+}
+
+.badge-danger {
+  background-color: rgba(239, 83, 80, 0.1);
+  color: var(--color-danger);
+}
+
+.badge-info {
+  background-color: rgba(124, 92, 255, 0.1);
+  color: var(--color-info);
+}
+
+/* CardAction */
+.cardAction {
+  padding: var(--space-xs) var(--space-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family-base);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.action-default {
+  background-color: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+.action-default:hover {
+  background-color: var(--color-border);
+}
+
+.action-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.action-primary:hover {
+  background-color: var(--color-primary-600);
+}
+
+.action-ghost {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.action-ghost:hover {
+  background-color: var(--color-surface-2);
+}
+
+.action-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: var(--border-width-1) solid var(--color-border);
+}
+
+.action-outline:hover {
+  background-color: var(--color-surface-2);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+
+  .cardHeader,
+  .cardBody.padded,
+  .cardFooter {
+    padding: var(--space-md);
+  }
+
+  .cardTitle {
+    font-size: var(--fs-md);
+  }
+
+  .cardImageContainer.cover .cardImage {
+    height: 160px;
+  }
+}

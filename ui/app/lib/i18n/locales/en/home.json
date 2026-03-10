@@ -1,0 +1,77 @@
+{
+    "hero": {
+        "badge": "Reinventing Events",
+        "title": "Event Planning, Redefined by Digital",
+        "subtitle": "SmartEvent supports you at every stage of your projects: from budget management to vendor coordination.",
+        "cta_primary": "Start for Free",
+        "cta_secondary": "Watch Demo"
+    },
+    "problem": {
+        "title": "Why SmartEvent?",
+        "subtitle": "Organizing an event is often synonymous with stress, oversights, and poor communication. We've created the solution to centralize your entire workflow.",
+        "items": {
+            "stress": {
+                "title": "Less Stress",
+                "desc": "A clear view of your tasks and timeline."
+            },
+            "communication": {
+                "title": "Smooth Communication",
+                "desc": "Exchange in real-time with all your collaborators."
+            },
+            "budget": {
+                "title": "Mastered Budget",
+                "desc": "Track your expenses and avoid surprises."
+            }
+        }
+    },
+    "features": {
+        "title": "Everything You Need",
+        "subtitle": "A suite of powerful tools for all types of users.",
+        "items": {
+            "timeline": {
+                "title": "Interactive Timeline",
+                "desc": "Visualize your event's progress day by day."
+            },
+            "budget": {
+                "title": "Budget Management",
+                "desc": "Import your invoices and track your payments."
+            },
+            "marketplace": {
+                "title": "Vendor Marketplace",
+                "desc": "Find the best services for your event."
+            },
+            "chat": {
+                "title": "Integrated Messaging",
+                "desc": "Centralize your exchanges with clients and vendors."
+            },
+            "notifications": {
+                "title": "Smart Alerts",
+                "desc": "Never miss a deadline thanks to our reminders."
+            },
+            "ai": {
+                "title": "AI Assistant",
+                "desc": "Let AI suggest the best options for your projects."
+            }
+        }
+    },
+    "personas": {
+        "title": "A Solution for Every Profile",
+        "organizer": {
+            "title": "Organizer",
+            "desc": "Manage multiple events simultaneously and coordinate your teams."
+        },
+        "provider": {
+            "title": "Provider",
+            "desc": "Offer your services, receive missions, and manage your quotes."
+        },
+        "client": {
+            "title": "Client",
+            "desc": "Keep an eye on the organization of your special event."
+        }
+    },
+    "footer": {
+        "rights": "© 2024 SmartEvent. All rights reserved.",
+        "contact": "Contact Us",
+        "terms": "Legal Notice"
+    }
+}

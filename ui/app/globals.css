@@ -1,26 +1,186 @@
-@import "tailwindcss";
+/* =========================================================
+   _variables.css
+   Light theme — Design tokens (typographie, colors, borders, spacings, shadows)
+   ========================================================= */
 
+/* ---------------- Brand & Colors ---------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary (utilisé comme couleur principale du site — désormais alignée sur couleur bouton) */
+  --color-primary: #ff934f;
+  /* bouton / accent principal (orange chaud) */
+  --color-primary-600: #e67a38;
+  --color-primary-400: #f59e6c;
+  --color-primary-100: #fff2ea;
+
+  /* Semantic */
+  --color-success: #24b47e;
+  --color-success-rgb: 36, 180, 126;
+  --color-warning: #ffb020;
+  --color-warning-rgb: 255, 176, 32;
+  --color-danger: #ef5350;
+  --color-danger-rgb: 239, 83, 80;
+  --color-info: #7c5cff;
+  --color-info-rgb: 124, 92, 255;
+  --color-blue: #2f6bff;
+  --color-blue-rgb: 47, 107, 255;
+  --color-orange: var(--color-primary);
+  --color-orange-rgb: 255, 147, 79;
+  --color-green: var(--color-success);
+  --color-green-rgb: var(--color-success-rgb);
+  --color-purple: var(--color-info);
+  --color-purple-rgb: var(--color-info-rgb);
+  --color-emerald: #10b981;
+  --color-emerald-rgb: 16, 185, 129;
+
+  /* Neutrals / Surfaces */
+  --color-bg: #fef9f3;
+  /* page background */
+  --color-surface: #ffffff;
+  /* card / surface */
+  --color-surface-2: #f8f4f1;
+  /* subtle surface */
+  --color-border: #efe6df;
+  /* borders / dividers */
+
+  /* Text */
+  --color-text: #2d2420;
+  /* body text */
+  --color-heading: #0b1220;
+  /* headings */
+  --color-muted: #6f7b85;
+  /* secondary text / labels */
+
+  /* UI specifics */
+  --sidebar-bg: #ffffff;
+  --sidebar-text: #28323a;
+  --accent: var(--color-primary);
+  /* accent synchronisé sur couleur primaire */
+
+  /* Link / focus override to use brand accent (orange) */
+  --link-color: var(--accent);
+  --focus-ring: rgba(255, 147, 79, 0.12);
+  /* subtle orange focus ring */
+  --muted-bg: var(--color-surface-2);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+/* ---------------- Typography ---------------- */
+:root {
+  --font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "Fira Code", "Courier New", monospace;
+
+  --fs-xxs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 15px;
+  /* body default */
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-xxl: 28px;
+
+  --lh-tight: 1.15;
+  --lh-base: 1.45;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------------- Spacing scale ---------------- */
+:root {
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
 }
+
+/* ---------------- Radius / Corners ---------------- */
+:root {
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+}
+
+/* ---------------- Borders & Lines ---------------- */
+:root {
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-radius: var(--radius-sm);
+  --border-muted: var(--color-border);
+}
+
+/* ---------------- Shadows / Elevation ---------------- */
+:root {
+  --shadow-sm: 0 2px 8px rgba(12, 20, 28, 0.06);
+  --shadow-md: 0 10px 30px rgba(12, 20, 28, 0.08);
+  --shadow-lg: 0 40px 80px rgba(12, 20, 28, 0.12);
+}
+
+/* ---------------- Transitions & Motion ---------------- */
+:root {
+  --ease-default: cubic-bezier(.2, .9, .2, 1);
+  --transition-fast: 150ms var(--ease-default);
+  --transition: 300ms var(--ease-default);
+  --transition-slow: 520ms var(--ease-default);
+}
+
+/* ---------------- Breakpoints ---------------- */
+:root {
+  --bp-xs: 360px;
+  --bp-sm: 640px;
+  --bp-md: 900px;
+  --bp-lg: 1200px;
+  --bp-xl: 1600px;
+}
+
+/* ---------------- Layout sizes ---------------- */
+:root {
+  --sidebar-width: 260px;
+  --header-height: 72px;
+  --container-max-width: 1260px;
+}
+
+/* ---------------- Dark Mode Override ---------------- */
+[data-theme='dark'] {
+  --color-bg: #080c11;
+  --color-surface: #111720;
+  --color-surface-2: #192230;
+  --color-border: #253040;
+  --color-text: #d1dae8;
+  --color-heading: #f1f5fb;
+  --color-muted: #7d8fa3;
+
+  --color-primary-100: rgba(255, 147, 79, 0.12);
+
+  --sidebar-bg: #0d1420;
+  --sidebar-text: #d1dae8;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 40px 80px rgba(0, 0, 0, 0.7);
+
+  --focus-ring: rgba(255, 147, 79, 0.25);
+  --muted-bg: var(--color-surface-2);
+}
+
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--fs-md);
+  line-height: var(--lh-base);
+  margin: 0;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+* {
+  box-sizing: border-box;
 }

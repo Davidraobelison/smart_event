@@ -1,0 +1,524 @@
+
+/* ==================================================== */
+/* File: Input.module.css */
+
+/* Conteneur principal */
+.inputContainer {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+  display: block;
+}
+
+/* Label */
+.label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-heading);
+  line-height: var(--lh-base);
+}
+
+.required {
+  color: var(--color-danger);
+  margin-left: 2px;
+}
+
+/* Wrapper d'input */
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-surface);
+  border: var(--border-width-1) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.inputWrapper:hover:not(.disabled) {
+  border-color: var(--color-primary-400);
+}
+
+.inputWrapper.focused:not(.disabled) {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.inputWrapper.error {
+  border-color: var(--color-danger);
+}
+
+.inputWrapper.error.focused {
+  box-shadow: 0 0 0 3px rgba(239, 83, 80, 0.16);
+}
+
+.inputWrapper.success {
+  border-color: var(--color-success);
+}
+
+.inputWrapper.success.focused {
+  box-shadow: 0 0 0 3px rgba(36, 180, 126, 0.16);
+}
+
+.inputWrapper.disabled {
+  background-color: var(--color-surface-2);
+  border-color: var(--color-border);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Icônes */
+.iconLeft,
+.iconRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+
+.iconLeft {
+  padding-left: var(--space-md);
+  padding-right: var(--space-xs);
+}
+
+.iconRight {
+  padding-right: var(--space-md);
+  padding-left: var(--space-xs);
+}
+
+.hasIconLeft .input,
+.hasIconLeft .textarea {
+  padding-left: calc(var(--space-md) + var(--space-xs) + 18px);
+}
+
+.hasIconRight .input,
+.hasIconRight .textarea {
+  padding-right: calc(var(--space-md) + var(--space-xs) + 18px);
+}
+
+/* Boutons d'icônes */
+.iconButton {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  cursor: pointer;
+  padding: var(--space-xxs);
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.iconButton:hover:not(:disabled) {
+  background-color: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+.iconButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.searchIcon {
+  color: var(--color-muted);
+}
+
+.successIcon {
+  color: var(--color-success);
+}
+
+/* Inputs de base */
+.input,
+.textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: none;
+  border: none;
+  font-family: var(--font-family-base);
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-muted);
+  opacity: 0.7;
+}
+
+.input:disabled,
+.textarea:disabled {
+  cursor: not-allowed;
+  color: var(--color-muted);
+}
+
+.inputError {
+  color: var(--color-danger);
+}
+
+.inputSuccess {
+  color: var(--color-success);
+}
+
+/* Textarea spécifique */
+.textarea {
+  resize: vertical;
+  min-height: calc(var(--fs-md) * 2 + var(--space-sm) * 2);
+  line-height: var(--lh-base);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+/* Range spécifique */
+.rangeContainer {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.rangeInput {
+  flex: 1;
+  height: 4px;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--color-border);
+  border-radius: var(--radius-xs);
+  outline: none;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.rangeValue {
+  min-width: 40px;
+  text-align: center;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+
+/* Color spécifique */
+.colorContainer {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.colorInput {
+  width: 50px;
+  height: 40px;
+  padding: 2px;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+}
+
+.colorValue {
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+  font-family: var(--font-family-mono);
+}
+
+/* File spécifique */
+.fileContainer {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fileInput {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fileInput:disabled {
+  cursor: not-allowed;
+}
+
+.fileLabel {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: var(--border-width-1) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-md);
+  color: var(--color-muted);
+  transition: all var(--transition-fast);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inputWrapper:not(.disabled):hover .fileLabel {
+  border-color: var(--color-primary-400);
+}
+
+.inputWrapper.focused:not(.disabled) .fileLabel {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.inputWrapper.error .fileLabel {
+  border-color: var(--color-danger);
+}
+
+.inputWrapper.success .fileLabel {
+  border-color: var(--color-success);
+}
+
+/* ==================================================== */
+/* Checkbox et Radio - wrapper label */
+.checkboxRadioContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  user-select: none;
+  position: relative; /* important pour positionner l'input invisible */
+  padding: 4px 0; /* petit padding pour zone cliquable */
+}
+
+/* Input invisible mais cliquable (overlay) */
+.checkboxRadioInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  z-index: 2; /* au-dessus du custom visuel pour capter le clic */
+}
+
+/* Le visuel custom (case / rond) n'accepte pas les événements pour laisser l'input recevoir le clic */
+.checkboxRadioCustom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: var(--border-width-1) solid var(--color-border);
+  border-radius: var(--radius-xs);
+  background-color: var(--color-surface);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+  pointer-events: none; /* IMPORTANT - laisse le clic atteindre l'input superposé */
+}
+
+/* Etat coché */
+.checkboxRadioInput:checked ~ .checkboxRadioCustom {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+/* Focus-visible (accessibilité) : on conserve un outline pour clavier */
+.checkboxRadioInput:focus ~ .checkboxRadioCustom {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+/* Disabled */
+.checkboxRadioInput:disabled ~ .checkboxRadioCustom {
+  background-color: var(--color-surface-2);
+  border-color: var(--color-border);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Si disabled & checked — garder teinte plus douce */
+.checkboxRadioInput:disabled:checked ~ .checkboxRadioCustom {
+  background-color: var(--color-primary-400);
+}
+
+/* Icône de la checkbox (la coche) */
+.checkboxCheck {
+  color: var(--color-surface); /* couleur de la coche (contraste) */
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all var(--transition-fast);
+  pointer-events: none;
+}
+
+/* afficher la coche lorsque checked */
+.checkboxRadioInput:checked ~ .checkboxRadioCustom .checkboxCheck {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Style radio : bord rond pour le custom */
+.checkboxRadioCustom[data-type="radio"] {
+  border-radius: 50%;
+}
+
+/* le point intérieure du radio */
+.radioDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-surface); /* par défaut invisible (même couleur que surface) */
+  opacity: 0;
+  transform: scale(0);
+  transition: all var(--transition-fast);
+  pointer-events: none;
+}
+
+/* afficher le point lorsque checked */
+.checkboxRadioInput:checked ~ .checkboxRadioCustom .radioDot {
+  background-color: var(--color-surface); /* point = surface pour contraste avec background primary */
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Texte du label (à droite) */
+.checkboxRadioLabel {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  cursor: pointer;
+  line-height: var(--lh-base);
+  margin-left: calc(var(--space-xs) + 6px); /* espace min */
+}
+
+/* Texte disabled */
+.checkboxRadioInput:disabled ~ .checkboxRadioLabel,
+.checkboxRadioContainer:has(.checkboxRadioInput:disabled) .checkboxRadioLabel {
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+/* Footer avec texte d'aide et compteur */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: var(--space-xs);
+  min-height: 20px;
+}
+
+.helperContainer {
+  flex: 1;
+}
+
+.helperText {
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+  line-height: var(--lh-base);
+}
+
+.errorText {
+  font-size: var(--fs-xs);
+  color: var(--color-danger);
+  line-height: var(--lh-base);
+}
+
+.successText {
+  font-size: var(--fs-xs);
+  color: var(--color-success);
+  line-height: var(--lh-base);
+}
+
+/* Compteur de caractères */
+.charCounter {
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+  margin-left: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.charCounterWarning {
+  color: var(--color-danger);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .input,
+  .textarea {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--fs-sm);
+  }
+  
+  .iconLeft,
+  .iconRight {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  
+  .hasIconLeft .input,
+  .hasIconLeft .textarea {
+    padding-left: calc(var(--space-sm) * 2 + 18px);
+  }
+  
+  .hasIconRight .input,
+  .hasIconRight .textarea {
+    padding-right: calc(var(--space-sm) * 2 + 18px);
+  }
+  
+  .rangeContainer,
+  .colorContainer {
+    padding: var(--space-xs) var(--space-sm);
+  }
+  
+  .textarea {
+    min-height: calc(var(--fs-sm) * 2 + var(--space-xs) * 2);
+  }
+  
+  .checkboxRadioLabel {
+    font-size: var(--fs-sm);
+  }
+}
+
+/* Styles pour les types date/time sur mobile */
+@media (max-width: 480px) {
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"] {
+    min-height: 44px; /* Pour une meilleure expérience tactile */
+  }
+}
+
+/* Support pour les navigateurs qui ne supportent pas certains types */
+.input::-webkit-datetime-edit-fields-wrapper,
+.input::-webkit-datetime-edit-text,
+.input::-webkit-datetime-edit-minute,
+.input::-webkit-datetime-edit-hour-field,
+.input::-webkit-datetime-edit-day-field,
+.input::-webkit-datetime-edit-month-field,
+.input::-webkit-datetime-edit-year-field {
+  padding: 0;
+}

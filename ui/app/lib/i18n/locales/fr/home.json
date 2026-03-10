@@ -1,0 +1,77 @@
+{
+    "hero": {
+        "badge": "Réinventons l'événement",
+        "title": "L'organisation d'événements, réinventée par le digital",
+        "subtitle": "SmartEvent vous accompagne dans chaque étape de vos projets : de la gestion du budget à la coordination des prestataires.",
+        "cta_primary": "Commencer gratuitement",
+        "cta_secondary": "Voir la démo"
+    },
+    "problem": {
+        "title": "Pourquoi SmartEvent ?",
+        "subtitle": "L'organisation d'un événement est souvent synonyme de stress, d'oublis et de mauvaise communication. Nous avons créé la solution pour centraliser tout votre flux de travail.",
+        "items": {
+            "stress": {
+                "title": "Moins de stress",
+                "desc": "Une vision claire sur vos tâches et votre timeline."
+            },
+            "communication": {
+                "title": "Communication fluide",
+                "desc": "Échangez en temps réel avec tous vos collaborateurs."
+            },
+            "budget": {
+                "title": "Budget maîtrisé",
+                "desc": "Suivez vos dépenses et évitez les mauvaises surprises."
+            }
+        }
+    },
+    "features": {
+        "title": "Tout ce dont vous avez besoin",
+        "subtitle": "Une suite d'outils puissants pour tous les types d'utilisateurs.",
+        "items": {
+            "timeline": {
+                "title": "Timeline Interactive",
+                "desc": "Visualisez l'avancement de votre événement jour par jour."
+            },
+            "budget": {
+                "title": "Gestion du Budget",
+                "desc": "Importez vos factures et suivez vos paiements."
+            },
+            "marketplace": {
+                "title": "Marketplace Prestataires",
+                "desc": "Trouvez les meilleurs services pour votre événement."
+            },
+            "chat": {
+                "title": "Messagerie Intégrée",
+                "desc": "Centralisez vos échanges avec vos clients et prestataires."
+            },
+            "notifications": {
+                "title": "Alertes Intelligentes",
+                "desc": "Ne ratez plus aucune échéance grâce à nos rappels."
+            },
+            "ai": {
+                "title": "Assistant IA",
+                "desc": "Laissez l'IA vous suggérer les meilleures options pour vos projets."
+            }
+        }
+    },
+    "personas": {
+        "title": "Une solution pour chaque profil",
+        "organizer": {
+            "title": "Organisateur",
+            "desc": "Gérez plusieurs événements simultanément et coordonnez vos équipes."
+        },
+        "provider": {
+            "title": "Prestataire",
+            "desc": "Proposez vos services, recevez des missions et gérez vos devis."
+        },
+        "client": {
+            "title": "Client",
+            "desc": "Gardez un oeil sur l'organisation de votre événement spécial."
+        }
+    },
+    "footer": {
+        "rights": "© 2024 SmartEvent. Tous droits réservés.",
+        "contact": "Contactez-nous",
+        "terms": "Mentions légales"
+    }
+}
