@@ -65,6 +65,7 @@
     padding: var(--space-xxl) var(--space-xl);
     max-width: 1200px;
     margin: 0 auto;
+    scroll-margin-top: 70px;
 }
 
 .sectionTitle {
@@ -351,6 +352,7 @@
 /* ---- Personas ---- */
 .personasSection {
     background: var(--color-bg);
+    scroll-margin-top: 70px;
 }
 
 .personaGrid {
