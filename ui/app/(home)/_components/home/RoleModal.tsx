@@ -3,7 +3,7 @@
 import React from "react";
 import { X, ChevronRight } from "lucide-react";
 import { demoRoles } from "./home.data";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 interface RoleModalProps {
   isOpen: boolean;

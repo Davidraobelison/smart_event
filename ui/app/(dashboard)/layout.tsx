@@ -43,37 +43,37 @@ export default function DashboardLayout({
 
     const menuItems: MenuItem[] = [
         // ORGANISATEUR
-        { path: "/Organisateur/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/budget", label: t("nav.budget"), icon: PieChart, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/message", label: t("nav.message"), icon: MessageSquare, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/invitation", label: t("nav.invitation"), icon: Users, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/gestion-ressource", label: t("nav.gestion-ressource"), icon: Briefcase, roles: ["ORGANIZER"] },
-        { path: "/Organisateur/marketplace", label: t("nav.marketplace"), icon: TrendingUp, roles: ["ORGANIZER"] },
+        { path: "/organisateur/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["ORGANIZER"] },
+        { path: "/organisateur/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["ORGANIZER"] },
+        { path: "/organisateur/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["ORGANIZER"] },
+        { path: "/organisateur/budget", label: t("nav.budget"), icon: PieChart, roles: ["ORGANIZER"] },
+        { path: "/organisateur/message", label: t("nav.message"), icon: MessageSquare, roles: ["ORGANIZER"] },
+        { path: "/organisateur/invitation", label: t("nav.invitation"), icon: Users, roles: ["ORGANIZER"] },
+        { path: "/organisateur/gestion-ressource", label: t("nav.gestion-ressource"), icon: Briefcase, roles: ["ORGANIZER"] },
+        { path: "/organisateur/marketplace", label: t("nav.marketplace"), icon: TrendingUp, roles: ["ORGANIZER"] },
 
         // PRESTATAIRE
-        { path: "/Prestataire/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["PROVIDER"] },
-        { path: "/Prestataire/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["PROVIDER"] },
-        { path: "/Prestataire/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["PROVIDER"] },
-        { path: "/Prestataire/message", label: t("nav.message"), icon: MessageSquare, roles: ["PROVIDER"] },
-        { path: "/Prestataire/gestion-ressource", label: t("nav.gestion-ressource"), icon: Briefcase, roles: ["PROVIDER"] },
-        { path: "/Prestataire/marketplace", label: t("nav.marketplace"), icon: TrendingUp, roles: ["PROVIDER"] },
+        { path: "/prestataire/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["PROVIDER"] },
+        { path: "/prestataire/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["PROVIDER"] },
+        { path: "/prestataire/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["PROVIDER"] },
+        { path: "/prestataire/message", label: t("nav.message"), icon: MessageSquare, roles: ["PROVIDER"] },
+        { path: "/prestataire/gestion-ressource", label: t("nav.gestion-ressource"), icon: Briefcase, roles: ["PROVIDER"] },
+        { path: "/prestataire/marketplace", label: t("nav.marketplace"), icon: TrendingUp, roles: ["PROVIDER"] },
 
         // CLIENT
-        { path: "/Client/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["CLIENT"] },
-        { path: "/Client/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["CLIENT"] },
-        { path: "/Client/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["CLIENT"] },
-        { path: "/Client/budget", label: t("nav.budget"), icon: PieChart, roles: ["CLIENT"] },
-        { path: "/Client/message", label: t("nav.message"), icon: MessageSquare, roles: ["CLIENT"] },
-        { path: "/Client/invitation", label: t("nav.invitation"), icon: Users, roles: ["CLIENT"] },
+        { path: "/client/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["CLIENT"] },
+        { path: "/client/evenement", label: t("nav.evenement"), icon: Calendar, roles: ["CLIENT"] },
+        { path: "/client/timeline-tache", label: t("nav.timeline-tache"), icon: CheckSquare, roles: ["CLIENT"] },
+        { path: "/client/budget", label: t("nav.budget"), icon: PieChart, roles: ["CLIENT"] },
+        { path: "/client/message", label: t("nav.message"), icon: MessageSquare, roles: ["CLIENT"] },
+        { path: "/client/invitation", label: t("nav.invitation"), icon: Users, roles: ["CLIENT"] },
 
         // ADMIN
-        { path: "/Admin/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["ADMIN"] },
-        { path: "/Admin/gestion-utilisateurs", label: t("nav.gestion-utilisateurs"), icon: Users, roles: ["ADMIN"] },
-        { path: "/Admin/abonnements", label: t("nav.abonnements"), icon: UserCheck, roles: ["ADMIN"] },
-        { path: "/Admin/gestion-prestataires", label: t("nav.gestion-prestataires"), icon: Briefcase, roles: ["ADMIN"] },
-        { path: "/Admin/statistiques", label: t("nav.statistiques"), icon: PieChart, roles: ["ADMIN"] },
+        { path: "/admin/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard, roles: ["ADMIN"] },
+        { path: "/admin/gestion-utilisateurs", label: t("nav.gestion-utilisateurs"), icon: Users, roles: ["ADMIN"] },
+        { path: "/admin/abonnements", label: t("nav.abonnements"), icon: UserCheck, roles: ["ADMIN"] },
+        { path: "/admin/gestion-prestataires", label: t("nav.gestion-prestataires"), icon: Briefcase, roles: ["ADMIN"] },
+        { path: "/admin/statistiques", label: t("nav.statistiques"), icon: PieChart, roles: ["ADMIN"] },
 
         // Shared
         { path: "/shared/settings", label: t("common.settings"), icon: Settings },

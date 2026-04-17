@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { useTranslation } from "@/hooks/useTranslation";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 interface HeroSectionProps {
   isSignedIn: boolean;

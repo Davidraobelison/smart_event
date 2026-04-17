@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { Wallet, TrendingUp, AlertCircle, Plus, Trash2, Search } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Card from "@/app/components/UI/Card/Card";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Card from "@/components/ui/Card/Card";
+import Badge from "@/components/ui/Badge/Badge";
 
 const initialItems = [
     { id: "1", category: "Lieu & Logistique", item: "Location Domaine de la Source", planned: 8000, actual: 7500, status: "paid" },

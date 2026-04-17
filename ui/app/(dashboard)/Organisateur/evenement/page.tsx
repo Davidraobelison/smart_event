@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { Calendar, Plus, MapPin, Search, Users, TrendingUp, Edit, Trash2, Eye } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Card from "@/app/components/UI/Card/Card";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Card from "@/components/ui/Card/Card";
+import Badge from "@/components/ui/Badge/Badge";
 
 const eventImages: Record<string, string> = {
     "1": "/images/event-wedding.png",

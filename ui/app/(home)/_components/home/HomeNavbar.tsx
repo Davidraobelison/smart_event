@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import { SignInButton, UserButton } from "@clerk/nextjs";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 interface HomeNavbarProps {
   isLoaded: boolean;

@@ -1,12 +1,12 @@
 "use client";
 
 import React, { createContext, useEffect, useState } from "react";
-import frCommon       from "@/app/lib/i18n/locales/fr/common.json";
-import enCommon       from "@/app/lib/i18n/locales/en/common.json";
-import frOrgDashboard from "@/app/lib/i18n/locales/fr/organisateur/dashboard.json";
-import enOrgDashboard from "@/app/lib/i18n/locales/en/organisateur/dashboard.json";
-import frHome         from "@/app/lib/i18n/locales/fr/home.json";
-import enHome         from "@/app/lib/i18n/locales/en/home.json";
+import frCommon       from "@/lib/i18n/locales/fr/common.json";
+import enCommon       from "@/lib/i18n/locales/en/common.json";
+import frOrgDashboard from "@/lib/i18n/locales/fr/organisateur/dashboard.json";
+import enOrgDashboard from "@/lib/i18n/locales/en/organisateur/dashboard.json";
+import frHome         from "@/lib/i18n/locales/fr/home.json";
+import enHome         from "@/lib/i18n/locales/en/home.json";
 
 export type Language = "fr" | "en";
 

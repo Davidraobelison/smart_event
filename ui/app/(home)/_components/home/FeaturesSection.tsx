@@ -3,7 +3,7 @@
 import React from "react";
 import { Calendar, TrendingUp, Briefcase, MessageSquare, Bell, Sparkles } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 const features = [
   { Icon: Calendar,      key: "timeline" },

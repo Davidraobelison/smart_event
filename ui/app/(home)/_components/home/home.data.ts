@@ -20,7 +20,7 @@ export const demoRoles: RoleOption[] = [
     Icon: User,
     color: "#10b981",
     bg: "rgba(16,185,129,0.1)",
-    redirect: "/Client/dashboard",
+    redirect: "/client/dashboard",
   },
   {
     id: UserRole.ORGANIZER,
@@ -29,7 +29,7 @@ export const demoRoles: RoleOption[] = [
     Icon: Calendar,
     color: "var(--color-primary)",
     bg: "rgba(255,147,79,0.1)",
-    redirect: "/Organisateur/dashboard",
+    redirect: "/organisateur/dashboard",
   },
   {
     id: UserRole.PROVIDER,
@@ -38,7 +38,7 @@ export const demoRoles: RoleOption[] = [
     Icon: Briefcase,
     color: "#7c5cff",
     bg: "rgba(124,92,255,0.1)",
-    redirect: "/Prestataire/dashboard",
+    redirect: "/prestataire/dashboard",
   },
   {
     id: UserRole.ADMIN,
@@ -47,6 +47,6 @@ export const demoRoles: RoleOption[] = [
     Icon: Shield,
     color: "#ef5350",
     bg: "rgba(239,83,80,0.1)",
-    redirect: "/Admin/dashboard",
+    redirect: "/admin/dashboard",
   },
 ];

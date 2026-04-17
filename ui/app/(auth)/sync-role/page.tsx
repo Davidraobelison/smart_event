@@ -30,23 +30,13 @@ export default async function SyncRolePage({
             }
         });
 
-        const prefixedRole = internalRole === "admin" ? "Admin"
-            : internalRole === "organisateur" ? "Organisateur"
-                : internalRole === "prestataire" ? "Prestataire"
-                    : "Client";
-
-        redirect(`/${prefixedRole}/dashboard`);
+        redirect(`/${internalRole}/dashboard`);
     } else {
         // Existing user login
         const user = await client.users.getUser(userId);
         const existingRole = (user.publicMetadata?.role as string) || "client";
 
-        let prefixedRole = "Client";
-        if (existingRole === "admin") prefixedRole = "Admin";
-        if (existingRole === "organisateur") prefixedRole = "Organisateur";
-        if (existingRole === "prestataire") prefixedRole = "Prestataire";
-
-        redirect(`/${prefixedRole}/dashboard`);
+        redirect(`/${existingRole}/dashboard`);
     }
 
     return null;

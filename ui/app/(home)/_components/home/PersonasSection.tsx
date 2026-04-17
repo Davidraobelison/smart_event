@@ -4,7 +4,7 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import { demoRoles } from "./home.data";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 interface PersonasSectionProps {
   onRoleSelect: (roleId: string) => void;

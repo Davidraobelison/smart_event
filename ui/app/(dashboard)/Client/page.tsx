@@ -7,7 +7,7 @@ export default function ClientPage() {
     const router = useRouter();
 
     useEffect(() => {
-        router.push("/Client/dashboard");
+        router.push("/client/dashboard");
     }, [router]);
 
     return null;

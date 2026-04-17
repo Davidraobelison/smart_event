@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { Users, Shield, UserCheck, UserX, Search, Plus } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Badge from "@/components/ui/Badge/Badge";
 
 const users = [
     { id: "1", name: "Marie Curie", email: "m.curie@smart.fr", role: "ORGANIZER", status: "active", plan: "Pro", created: "15 Jan 2024" },

@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { Plus, Star, MapPin, Phone, Search, X, Send } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Badge from "@/app/components/UI/Badge/Badge";
-import Card from "@/app/components/UI/Card/Card";
+import styles from "@/components/shared/page.module.css";
+import Badge from "@/components/ui/Badge/Badge";
+import Card from "@/components/ui/Card/Card";
 
 const vendorImages: Record<string, string> = {
     "1": "/images/vendors/vendor-1-traiteur.jpg",

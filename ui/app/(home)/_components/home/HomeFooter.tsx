@@ -1,7 +1,7 @@
 import React from "react";
 import { Sparkles } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 const productLinks = ["Fonctionnalités", "Tarifs", "Application"];
 const helpLinks    = ["Support", "Contact", "FAQ"];

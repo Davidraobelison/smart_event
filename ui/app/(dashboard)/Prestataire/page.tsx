@@ -7,7 +7,7 @@ export default function PrestatairePage() {
     const router = useRouter();
 
     useEffect(() => {
-        router.push("/Prestataire/dashboard");
+        router.push("/prestataire/dashboard");
     }, [router]);
 
     return null;

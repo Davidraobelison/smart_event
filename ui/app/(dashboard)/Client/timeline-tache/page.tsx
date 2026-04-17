@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useTranslation } from "@/app/lib/i18n/I18nContext";
+import { useTranslation } from "@/lib/i18n/I18nContext";
 import styles from "./page.module.css";
 
 export default function Page() {

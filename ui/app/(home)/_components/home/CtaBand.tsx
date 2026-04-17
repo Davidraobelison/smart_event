@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "@/app/Home.module.css";
+import styles from "@/app/(home)/Home.module.css";
 
 interface CtaBandProps {
   onOpenModal: (mode: "login" | "signup") => void;

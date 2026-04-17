@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Card from "@/app/components/UI/Card/Card";
-import Badge from "@/app/components/UI/Badge/Badge";
-import { useTranslation } from "@/app/lib/i18n/I18nContext";
-import { useAuth } from "@/app/lib/auth/AuthContext";
+import Card from "@/components/ui/Card/Card";
+import Badge from "@/components/ui/Badge/Badge";
+import { useTranslation } from "@/lib/i18n/I18nContext";
+import { useAuth } from "@/lib/auth/AuthContext";
 import { Users, UserCheck, Shield, PieChart } from "lucide-react";
 
 export default function AdminDashboard() {

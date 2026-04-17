@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { CreditCard, TrendingUp, Users, CheckCircle, X, Eye } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Badge from "@/app/components/UI/Badge/Badge";
-import Card from "@/app/components/UI/Card/Card";
+import styles from "@/components/shared/page.module.css";
+import Badge from "@/components/ui/Badge/Badge";
+import Card from "@/components/ui/Card/Card";
 
 const subscriptions = [
     { id: "1", user: "Marie Curie", email: "m.curie@smart.fr", plan: "Pro Annuel", amount: 199, status: "active", nextBilling: "15 Jan 2025" },

@@ -7,7 +7,7 @@ export default function OrganisateurPage() {
     const router = useRouter();
 
     useEffect(() => {
-        router.push("/Organisateur/dashboard");
+        router.push("/organisateur/dashboard");
     }, [router]);
 
     return null;

@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { Plus, Search, Mail, Phone, UserCheck, UserX, Send } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Badge from "@/components/ui/Badge/Badge";
 
 const invitations = [
     { id: "1", name: "Sophie Martin", email: "sophie.martin@email.fr", phone: "+33 6 12 34 56 78", status: "confirmed", table: "Table 1" },

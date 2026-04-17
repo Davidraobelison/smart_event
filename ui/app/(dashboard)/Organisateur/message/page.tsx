@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Send, Search, User } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
+import styles from "@/components/shared/page.module.css";
 
 const contacts = [
     { id: "1", name: "Julie Moreau (Cliente)", role: "Client", avatar: "JM", lastMsg: "Super, merci pour la mise à jour !", time: "10:30", unread: 2 },

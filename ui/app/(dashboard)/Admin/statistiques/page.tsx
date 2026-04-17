@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Users, TrendingUp, Calendar, CreditCard, ArrowUp, ArrowDown } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Card from "@/app/components/UI/Card/Card";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Card from "@/components/ui/Card/Card";
+import Badge from "@/components/ui/Badge/Badge";
 
 const monthlyData = [
     { month: "Jan", users: 80, revenue: 1520, events: 12 },

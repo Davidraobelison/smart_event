@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Card from "@/app/components/UI/Card/Card";
-import Select from "@/app/components/UI/Select/Select";
-import { useTranslation } from "@/app/lib/i18n/I18nContext";
+import Card from "@/components/ui/Card/Card";
+import Select from "@/components/ui/Select/Select";
+import { useTranslation } from "@/lib/i18n/I18nContext";
 
-import { useTheme } from "@/app/lib/theme/ThemeContext";
-import { useAuth, UserRole } from "@/app/lib/auth/AuthContext";
+import { useTheme } from "@/lib/theme/ThemeContext";
+import { useAuth, UserRole } from "@/lib/auth/AuthContext";
 import {
     User,
     Shield,

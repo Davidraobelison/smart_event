@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import { Plus, Clock, AlertCircle, MoreHorizontal, Calendar, ArrowLeft, ArrowRight, List, X } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
+import styles from "@/components/shared/page.module.css";
 import taskStyles from "./tasks.module.css";
-import Card from "@/app/components/UI/Card/Card";
-import Badge from "@/app/components/UI/Badge/Badge";
+import Card from "@/components/ui/Card/Card";
+import Badge from "@/components/ui/Badge/Badge";
 
 type Status = "TODO" | "IN_PROGRESS" | "DONE";
 type Priority = "Haute" | "Moyenne" | "Basse";

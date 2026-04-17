@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { Star, CheckCircle, XCircle, Search, Plus, Eye, AlertCircle } from "lucide-react";
-import styles from "@/app/components/shared/page.module.css";
-import Badge from "@/app/components/UI/Badge/Badge";
+import styles from "@/components/shared/page.module.css";
+import Badge from "@/components/ui/Badge/Badge";
 
 const providers = [
     { id: "1", name: "Luxe Traiteur SARL", category: "Traiteur", rating: 4.9, reviews: 124, status: "verified", plan: "Pro", joined: "05 Fev 2024" },
