@@ -23,9 +23,21 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*":              ["./*"],
+      "@/components/*":  ["./components/*"],
+      "@/components/ui": ["./components/ui/index.ts"],
+      "@/hooks":         ["./hooks/index.ts"],
+      "@/hooks/*":       ["./hooks/*"],
+      "@/providers":     ["./providers/index.ts"],
+      "@/providers/*":   ["./providers/*"],
+      "@/services":      ["./services/index.ts"],
+      "@/services/*":    ["./services/*"],
+      "@/types":         ["./types/index.ts"],
+      "@/types/*":       ["./types/*"],
+      "@/constants":     ["./constants/index.ts"],
+      "@/constants/*":   ["./constants/*"],
+      "@/utils":         ["./utils/index.ts"],
+      "@/utils/*":       ["./utils/*"]
     }
   },
   "include": [

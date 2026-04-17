@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Sidebar, { MenuItem } from "@/app/components/Layout/Sidebar/Sidebar";
-import Header from "@/app/components/Layout/Header/Header";
-import { useAuth } from "@/app/lib/auth/AuthContext";
-import { useTheme } from "@/app/lib/theme/ThemeContext";
-import { useTranslation } from "@/app/lib/i18n/I18nContext";
+import Sidebar from "@/components/layout/Sidebar";
+import Header from "@/components/layout/Header";
+import type { MenuItem } from "@/components/layout/Sidebar";
+import { useAuth } from "@/hooks/useAuth";
+import { useTheme } from "@/hooks/useTheme";
+import { useTranslation } from "@/hooks/useTranslation";
 import {
     LayoutDashboard,
     Calendar,
