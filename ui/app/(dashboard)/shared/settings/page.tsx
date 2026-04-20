@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Card from "@/components/ui/Card/Card";
 import Select from "@/components/ui/Select/Select";
 import { useTranslation } from "@/lib/i18n/I18nContext";
@@ -12,8 +12,6 @@ import {
     Shield,
     Bell,
     Globe,
-    Moon,
-    Sun,
     ChevronRight,
     Save,
     ShieldCheck,
@@ -224,7 +222,7 @@ export default function SettingsPage() {
     return (
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-xl)' }}>
             <header>
-                <h1 style={{ fontSize: 'var(--fs-xxl)', fontWeight: 'var(--fw-bold)', color: 'var(--color-heading)', margin: 0 }}>{t("common.settings")}</h1>
+                <h1 style={{ fontSize: 'var(--fs-xxl)', fontWeight: 'var(--fw-bold)', color: 'var(--color-heading)', margin: 0 }}>{t("settings")}</h1>
                 <p style={{ color: 'var(--color-muted)', marginTop: '4px' }}>Configurez votre environnement de travail et vos préférences.</p>
             </header>
 

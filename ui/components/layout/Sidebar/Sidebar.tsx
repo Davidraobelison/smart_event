@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Sidebar.module.css';
 import type { ComponentType, ReactNode } from 'react';
-import { X, Sparkles, User } from 'lucide-react';
+import { X, User } from 'lucide-react';
 
 /** Menu item icon signature (lucide-react or any icon component that accepts size/color) */
 export type IconComp = ComponentType<{ size?: number; color?: string; className?: string }>;
@@ -98,10 +98,20 @@ const Sidebar: React.FC<SidebarProps> = ({
       >
         <div className={styles.header}>
           <div className={styles.brand}>
-            <div className={styles.brandIcon}>
-              {brandIcon ? React.createElement(brandIcon, { size: 20 }) : <Sparkles size={20} />}
-            </div>
-            <div className={styles.brandTitle}>{brandTitle}</div>
+            {brandIcon ? (
+              <>
+                <div className={styles.brandIcon}>
+                  {React.createElement(brandIcon, { size: 20 })}
+                </div>
+                <div className={styles.brandTitle}>{brandTitle}</div>
+              </>
+            ) : (
+              <>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo.svg" alt="SmartEvent" style={{ height: "36px", width: "auto" }} />
+                <div className={styles.brandTitle}>{brandTitle}</div>
+              </>
+            )}
           </div>
           <button
             type="button"

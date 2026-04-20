@@ -17,8 +17,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SmartEvent",
-  description: "Réinventons l’organisation de l’événement grâce au digital",
+  title: "SmartEvent — Organisez. Simplifiez. Réussissez.",
+  description: "SmartEvent est la plateforme tout-en-un pour planifier, piloter et réussir vos événements.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

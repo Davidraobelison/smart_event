@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import styles from "@/app/(home)/Home.module.css";
 
@@ -16,7 +15,8 @@ export default function HomeNavbar({ isLoaded, isSignedIn, onOpenModal }: HomeNa
   return (
     <header className={styles.navbar}>
       <div className={styles.logo}>
-        <Sparkles size={24} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.svg" alt="SmartEvent" style={{ height: "36px", width: "36px" }} />
         <span>SmartEvent</span>
       </div>
       <nav className={styles.navLinks}>

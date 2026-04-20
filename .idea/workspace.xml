@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7aca3590-0292-4b41-91b6-ce799d30d331" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/abonnements/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/abonnements/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/dashboard/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/gestion-prestataires/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/gestion-prestataires/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/gestion-utilisateurs/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/gestion-utilisateurs/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/statistiques/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Admin/statistiques/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/budget/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/budget/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/dashboard/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/evenement/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/evenement/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/invitation/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/invitation/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/message/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/message/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/timeline-tache/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Client/timeline-tache/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/budget/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/budget/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/dashboard/Dashboard.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/dashboard/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/evenement/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/evenement/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/gestion-ressource/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/gestion-ressource/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/invitation/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/invitation/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/marketplace/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/marketplace/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/message/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/message/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/timeline-tache/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/timeline-tache/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Organisateur/timeline-tache/tasks.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/dashboard/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/evenement/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/evenement/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/gestion-ressource/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/gestion-ressource/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/marketplace/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/marketplace/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/message/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/message/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/timeline-tache/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/Prestataire/timeline-tache/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app/(dashboard)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(dashboard)/shared/settings/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app/(dashboard)/shared/settings/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/(home)/_components/home/HomeNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app/(home)/_components/home/HomeNavbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/layout/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/layout/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/services/api.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/services/api.client.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3CbwE3282TRnV9LClTbYHJPaVhR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "developpement",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.general"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7aca3590-0292-4b41-91b6-ce799d30d331" name="Changes" comment="" />
+      <created>1776667463134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776667463134</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

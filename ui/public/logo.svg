@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#0f1320"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ff6b1a"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff934f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff934f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="200" height="200" rx="44" fill="url(#bgGrad)"/>
+
+  <!-- Subtle glow at bottom -->
+  <ellipse cx="100" cy="180" rx="70" ry="28" fill="url(#glowGrad)"/>
+
+  <!-- Calendar base shape -->
+  <rect x="36" y="60" width="128" height="104" rx="14" fill="#1e2436" stroke="#2e3550" stroke-width="1.5"/>
+
+  <!-- Calendar top bar -->
+  <rect x="36" y="60" width="128" height="36" rx="14" fill="url(#orangeGrad)"/>
+  <rect x="36" y="82" width="128" height="14" rx="0" fill="url(#orangeGrad)"/>
+
+  <!-- Calendar hooks -->
+  <rect x="68" y="48" width="10" height="26" rx="5" fill="#ff934f"/>
+  <rect x="122" y="48" width="10" height="26" rx="5" fill="#ff934f"/>
+
+  <!-- Grid dots (calendar days) -->
+  <rect x="52" y="114" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="72" y="114" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="92" y="114" width="11" height="11" rx="3" fill="#ff934f" filter="url(#glow)"/>
+  <rect x="112" y="114" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="132" y="114" width="11" height="11" rx="3" fill="#2e3550"/>
+
+  <rect x="52" y="134" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="72" y="134" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="92" y="134" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="112" y="134" width="11" height="11" rx="3" fill="#2e3550"/>
+  <rect x="132" y="134" width="11" height="11" rx="3" fill="#2e3550"/>
+
+  <!-- Lightning bolt overlay (smart indicator) -->
+  <path d="M108 66 L96 84 L104 84 L92 102 L112 82 L103 82 Z"
+        fill="white" opacity="0.95" filter="url(#glow)"/>
+</svg>
